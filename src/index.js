@@ -16,7 +16,7 @@ const app = express();
 //  app.use(express.static(staticPath));
 app.use(express.static(path.join(__dirname, 'public')));
  app.get("index",(res,req)=>{
-     res.render("index" );
+     res.render("index", {sujay:"wellcome!"});
 
  });
 //app.get("/",(res, req)=>{ 
